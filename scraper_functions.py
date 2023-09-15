@@ -22,10 +22,6 @@ def get_card_links(link):
             href = tag.get_attribute("href")
             card_links.append(href)
         limit += 50
-    
-        if limit >= 50:
-            break
-
     print("Links Gathered Successfully!")
     return card_links
 
